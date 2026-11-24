@@ -1,25 +1,269 @@
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BW Services and Development · Websites for Hawaiʻi small businesses</title>
+  <meta name="description" content="Websites for Hawaiʻi small businesses on one monthly price. Design, hosting, updates and Google listings handled by a local developer. Plans from $99/month.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<header>
-    <table>
-        <tr>
-            <th>
-                <p>bridgerwinter.com</p>
-            </th>
-        </tr>
-        <tr>
-            <th>
-                <a href="index.html">Home</a>
-                <a href="reviews.html">Reviews</a>
-            </th>
-        </tr>
-    </table>
-</header>
-
-
 <body>
-    <p>
-        I am a software engineer.
-    </p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">BW</span>
+        <span class="brand-text">
+          <span class="brand-name">BW Services</span>
+          <span class="brand-sub">and Development</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how">How it works</a>
+        <a href="#payments">Payments</a>
+        <a href="#contact" class="nav-cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Websites for Hawaiʻi small businesses</p>
+        <h1>Get found. Get customers.</h1>
+        <p class="lede">No big upfront bill. One monthly price. A local developer who answers the phone.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#pricing">See pricing</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="hero-points" aria-label="Every plan includes">
+          <li>You own your domain and content</li>
+          <li>No hidden fees</li>
+          <li>Live in about two weeks</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">What I do</p>
+          <h2>Everything your business needs online, handled</h2>
+          <p>You run your business. I build your website and keep it running, so customers can find you, call you and walk in.</p>
+        </header>
+
+        <ul class="card-grid">
+          <li class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 8h18M8 21h8M12 18v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Website design and build</h3>
+            <p>A fast, mobile-friendly site with your hours, tap-to-call, a map and the details customers look for.</p>
+          </li>
+          <li class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Hosting, security and updates</h3>
+            <p>Your domain, hosting and security certificate, plus monthly edit time when your hours or menu change.</p>
+          </li>
+          <li class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <h3>Google and local listings</h3>
+            <p>Your Google Business Profile set up right, and on Growth, Yelp and Apple Maps too.</p>
+          </li>
+          <li class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Custom tools</h3>
+            <p>Online booking, ordering, inventory or customer tools, built around how you already work.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section section-tint">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple monthly plans</h2>
+          <p>No large upfront bill. Pick a plan, and I'll handle the rest.</p>
+        </header>
+
+        <div class="pricing-grid">
+          <article class="plan">
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-price"><span class="amount">$99</span><span class="per">/month</span></p>
+            <p class="plan-setup">$0 setup on a 12-month plan, or $299 setup month-to-month</p>
+            <ul class="plan-list">
+              <li>Mobile-friendly site, 1–3 pages</li>
+              <li>Your domain, hosting and security</li>
+              <li>Tap-to-call, map and hours</li>
+              <li>Google Business Profile set up</li>
+              <li>30 minutes of edits each month</li>
+            </ul>
+            <a class="btn btn-ghost btn-block" href="#contact">Start with Starter</a>
+          </article>
+
+          <article class="plan plan-featured">
+            <p class="plan-badge">Most popular</p>
+            <h3 class="plan-name">Growth</h3>
+            <p class="plan-price"><span class="amount">$179</span><span class="per">/month</span></p>
+            <p class="plan-setup">$0 setup on a 12-month plan</p>
+            <ul class="plan-list">
+              <li><strong>Everything in Starter, plus:</strong></li>
+              <li>Up to 6 pages</li>
+              <li>Online booking, menu or ordering link</li>
+              <li>Listed on Yelp and Apple Maps too</li>
+              <li>Your best reviews shown on the site</li>
+              <li>1 hour of updates and a visitor report each month</li>
+            </ul>
+            <a class="btn btn-light btn-block" href="#contact">Choose Growth</a>
+          </article>
+
+          <article class="plan">
+            <h3 class="plan-name">Custom</h3>
+            <p class="plan-price"><span class="from">From</span> <span class="amount">$1,500</span></p>
+            <p class="plan-setup">then $149/month for hosting and care</p>
+            <ul class="plan-list">
+              <li>Online booking or ordering systems</li>
+              <li>Inventory and customer tools</li>
+              <li>Built around how you already work</li>
+              <li>Quoted after a free chat</li>
+            </ul>
+            <a class="btn btn-ghost btn-block" href="#contact">Ask for a quote</a>
+          </article>
+        </div>
+
+        <p class="fine-print">Every plan: you own your domain and content · No hidden fees · Prices plus Hawaiʻi GET.</p>
+
+        <aside class="callout" aria-label="Does it pay for itself?">
+          <h3>Does it pay for itself?</h3>
+          <p>$99 a month is about $3.25 a day. If one new customer a month finds you online, the site has paid for itself.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps, about two weeks</h2>
+        </header>
+        <ol class="steps">
+          <li>
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Free 20-minute chat</h3>
+            <p>Tell me about your business and what customers ask you most.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Live in about two weeks</h3>
+            <p>I write it and set it up. You review and approve.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Leave the rest to me</h3>
+            <p>Updates, fixes and renewals, handled every month.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PAYMENTS -->
+    <section id="payments" class="section section-tint">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Ways to pay</p>
+          <h2>Set it up once, then forget about it</h2>
+          <p>Monthly plans are paid by automatic payment, so there are no invoices to chase and your site never lapses.</p>
+        </header>
+
+        <div class="pay-grid">
+          <article class="pay-card">
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6M5 10v8M9 10v8M15 10v8M19 10v8M3 21h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Bank autopay (ACH)</h3>
+            <p>Paid straight from your business checking account each month. Preferred: lower processing fees keep plan prices low.</p>
+          </article>
+          <article class="pay-card">
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18M7 15h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Credit or debit card</h3>
+            <p>Visa, Mastercard, American Express or Discover, charged automatically each month.</p>
+          </article>
+          <article class="pay-card">
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5M10 13h6M10 17h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Custom projects</h3>
+            <p>Paid by invoice on the schedule in your quote, by bank transfer or card.</p>
+          </article>
+        </div>
+
+        <dl class="billing-details">
+          <div>
+            <dt>When you're billed</dt>
+            <dd>Your first month is charged when you sign up, then on the same date each month.</dd>
+          </div>
+          <div>
+            <dt>Receipts</dt>
+            <dd>Every payment comes with an emailed receipt for your records.</dd>
+          </div>
+          <div>
+            <dt>Plan terms</dt>
+            <dd>12-month plans have $0 setup and continue month-to-month after the first year. Starter is also available month-to-month with a $299 setup fee.</dd>
+          </div>
+          <div>
+            <dt>Tax</dt>
+            <dd>Prices are plus Hawaiʻi General Excise Tax (GET), shown on every invoice.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ABOUT + CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Local, and easy to reach</h2>
+          <p>I'm Bridger, a software engineer based in Hawaiʻi. BW Services and Development builds and looks after websites for small businesses here, so owners can stay focused on their customers.</p>
+          <p>The first conversation is free and there's no pressure. Tell me about your business and I'll tell you honestly what would help.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Let's talk story</h3>
+          <ul class="contact-list">
+            <!-- TODO: replace with real contact details before going live -->
+            <li><span class="contact-label">Email</span> <a href="mailto:you@example.com">[YOUR EMAIL]</a></li>
+            <li><span class="contact-label">Phone or text</span> <a href="tel:+18080000000">[YOUR PHONE]</a></li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="mailto:you@example.com?subject=Website%20for%20my%20business">Book a free 20-minute chat</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> BW Services and Development LLC · Hawaiʻi</p>
+      <nav aria-label="Footer">
+        <a href="#pricing">Pricing</a>
+        <a href="#payments">Payments</a>
+        <a href="reviews.html">Game reviews</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
 </body>
+</html>
