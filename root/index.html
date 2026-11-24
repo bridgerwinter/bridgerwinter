@@ -249,13 +249,53 @@
           <p>The first conversation is free and there's no pressure. Tell me about your business and I'll tell you honestly what would help.</p>
         </div>
         <div class="contact-card">
-          <h3>Let's talk story</h3>
-          <ul class="contact-list">
-            <!-- TODO: replace with real contact details before going live -->
-            <li><span class="contact-label">Email</span> <a href="mailto:you@example.com">[YOUR EMAIL]</a></li>
-            <li><span class="contact-label">Phone or text</span> <a href="tel:+18080000000">[YOUR PHONE]</a></li>
-          </ul>
-          <a class="btn btn-primary btn-block" href="mailto:you@example.com?subject=Website%20for%20my%20business">Book a free 20-minute chat</a>
+          <h3>Book a free 20&#8209;minute chat</h3>
+          <p class="contact-intro">Send a note and I'll get back to you within one business day.</p>
+
+          <!-- Contact form: submissions are emailed by Web3Forms (https://web3forms.com).
+               The access key below is safe to be public; it only tells Web3Forms which inbox to send to. -->
+          <form class="contact-form" data-contact-form action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="subject" value="New inquiry from bridgerwinter.com">
+            <input type="hidden" name="from_name" value="BW Services website">
+            <!-- Spam trap: real visitors never see or tick this -->
+            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-business">Business name <span class="optional">(optional)</span></label>
+              <input id="cf-business" name="business" type="text" autocomplete="organization">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+              </div>
+              <div class="field">
+                <label for="cf-phone">Phone <span class="optional">(optional)</span></label>
+                <input id="cf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+              </div>
+            </div>
+            <div class="field">
+              <label for="cf-plan">Interested in</label>
+              <select id="cf-plan" name="plan">
+                <option value="Not sure yet">Not sure yet</option>
+                <option value="Starter ($99/month)">Starter ($99/month)</option>
+                <option value="Growth ($199/month)">Growth ($199/month)</option>
+                <option value="Custom">Custom</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="cf-message">Tell me about your business</label>
+              <textarea id="cf-message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit" data-submit>Send message</button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
